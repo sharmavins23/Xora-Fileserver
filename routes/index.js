@@ -1,3 +1,5 @@
+// * Dynamically loads routes included in this folder.
+
 var fs = require("fs");
 
 function dynamicallyLoadRoutes(app) {

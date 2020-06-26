@@ -5,10 +5,10 @@ more projects in the future.
 
 ## Overview and Functionality
 
-The application is built on a node server on express.js, and segments API routes
-and functionality into several separate project folders. As such, the return
-values for any individual project can be changed completely without making
-modifications to any other code.
+The application is built on a node server on express.js, and routes for the
+individual projects are segmented into individual files. Thus, to change the
+data or routes for a project, one needs to only change the file in the routes
+directory, as well as the data in the specific project. All data and
+implementation can be done separately and agnostic of other changes or projects.
 
-Modules are loaded in dynamically based on a robust file structure, which
-mirrors the HTTP request paths.
+Each individual project will have a link to its Github code in the routes file.

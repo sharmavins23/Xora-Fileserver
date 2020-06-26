@@ -1,8 +1,10 @@
+// * Main Project: https://github.com/sharmavins23/Zoo
+
 var zooData = require("../data/zoo/zooData.json");
 
 function zoo(app) {
     // Get all animals from zoo.
-    app.get("/zoo/", function (req, res) {
+    app.get("/zoo", function (req, res) {
         // Implementation here.
     });
 
@@ -12,7 +14,9 @@ function zoo(app) {
     });
 
     // Remove an animal from the zoo.
-    app.post("/zoo/");
+    app.delete("/zoo", function (req, res) {
+        // Implementation here.
+    });
 }
 
 module.exports = zoo;
