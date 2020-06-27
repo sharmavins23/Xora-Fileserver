@@ -1,1 +1,14 @@
-{}
+{
+    "assets": [
+        {
+            "name": "Beagle",
+            "image_url": "image_url",
+            "asset_url": "asset_url"
+        },
+        {
+            "name": "Otter",
+            "image_url": "image_url",
+            "asset_url": "asset_url"
+        }
+    ]
+}

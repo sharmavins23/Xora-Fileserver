@@ -4,17 +4,17 @@ var zooData = require("../data/zoo/zooData.json");
 
 function zoo(app) {
     // Get all animals from zoo.
-    app.get("/zoo", function (req, res) {
-        // Implementation here.
+    app.get("/zoo", (req, res) => {
+        res.send(zooData);
     });
 
     // Add an animal to the zoo.
-    app.post("/zoo/add", function (req, res) {
+    app.post("/zoo/add", (req, res) => {
         // Implementation here.
     });
 
     // Remove an animal from the zoo.
-    app.delete("/zoo", function (req, res) {
+    app.delete("/zoo", (req, res) => {
         // Implementation here.
     });
 }

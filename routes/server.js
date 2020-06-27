@@ -5,7 +5,7 @@ const dataDir = "./data/";
 
 function server(app) {
     // Return a list of all projects.
-    app.get("/", function (req, res) {
+    app.get("/", (req, res) => {
         res.status(200).send(JSON.stringify(getDirectories(dataDir)));
     });
 }
