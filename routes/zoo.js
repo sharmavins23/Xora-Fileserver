@@ -13,7 +13,7 @@ function zoo(app) {
         /* Request format:
             {
                 "name": "",
-                "emoji_int": "",
+                "default_scalar": "",
                 "asset_url": ""
             }
         */
