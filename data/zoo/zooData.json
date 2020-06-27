@@ -2,13 +2,28 @@
     "assets": [
         {
             "name": "Beagle",
-            "image_url": "image_url",
-            "asset_url": "asset_url"
+            "emoji_int": "0x1F436",
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593163282556311/0BnDT3T1wTE/85QOHCZOvov/Mesh_Beagle.gltf"
         },
         {
             "name": "Otter",
-            "image_url": "image_url",
-            "asset_url": "asset_url"
+            "emoji_int": "0x1F9A6",
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593080278446684/dJW3JeUWXQ-/50CetZ7PFPM/RiverOtter.gltf"
+        },
+        {
+            "name": "Wolf",
+            "emoji_int": "0x1F43A",
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593165365211172/9L2D1s2_rPO/ewC0cMLb19z/Mesh_Wolf.gltf"
+        },
+        {
+            "name": "Goat",
+            "emoji_int": "0x1F410",
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593165865846333/bNYS7ETDNCt/93hZkSoh7qG/Mesh_Goat.gltf"
+        },
+        {
+            "name": "Lion",
+            "emoji_int": "0x1F981",
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593164292485019/3XAJojWxSWz/651X3e2SPWc/Lion.gltf"
         }
     ]
 }

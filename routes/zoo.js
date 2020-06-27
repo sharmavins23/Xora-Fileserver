@@ -10,12 +10,19 @@ function zoo(app) {
 
     // Add an animal to the zoo.
     app.post("/zoo/add", (req, res) => {
-        // Implementation here.
+        /* Request format:
+            {
+                "name": "",
+                "emoji_int": "",
+                "asset_url": ""
+            }
+        */
+        // TODO: Implementation here.
     });
 
     // Remove an animal from the zoo.
     app.delete("/zoo", (req, res) => {
-        // Implementation here.
+        // TODO: Implementation here.
     });
 }
 
