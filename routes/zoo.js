@@ -1,6 +1,6 @@
 // * Main Project: https://github.com/sharmavins23/Zoo
 
-const zooDataPath = "../data/zoo/zooData.json";
+const zooDataPath = "data/zoo/zooData.json";
 var zooData;
 const fs = require("fs");
 
@@ -20,8 +20,7 @@ function zoo(app) {
                 "asset_url": ""
             }
         */
-        zooData.push(req.body);
-        fs.writeFileSync(zooDataPath, zooData);
+        //fs.writeFileSync(zooDataPath, zooData);
 
         reloadData();
     });
@@ -33,7 +32,7 @@ function zoo(app) {
 
     // Relaod the parsed data in a blocking format.
     function reloadData() {
-        zooData = fs.readFileSync(zooDataPath);
+        zooData = JSON.parse(fs.readFileSync(zooDataPath));
     }
 }
 
