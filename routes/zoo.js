@@ -1,16 +1,14 @@
 // * Main Project: https://github.com/sharmavins23/Zoo
 
-const zooDataPath = "data/zoo/zooData.json";
-var Reloader = require("reload-json");
-var reload = new Reloader();
+const zooDataPath = "../data/zoo/zooData.json";
+var zooData;
+const fs = require("fs");
 
 function zoo(app) {
     // Get all animals from zoo.
     app.get("/zoo", (req, res) => {
-        // Hot reloading support for module - reloads on source file change
-        reload.load(zooDataPath, (err, data) => {
-            res.send(data);
-        });
+        reloadData();
+        res.send(zooData);
     });
 
     // Add an animal to the zoo.
@@ -22,13 +20,21 @@ function zoo(app) {
                 "asset_url": ""
             }
         */
-        // TODO: Implementation here.
+        zooData.push(req.body);
+        fs.writeFileSync(zooDataPath, zooData);
+
+        reloadData();
     });
 
     // Remove an animal from the zoo.
     app.delete("/zoo", (req, res) => {
         // TODO: Implementation here.
     });
+
+    // Relaod the parsed data in a blocking format.
+    function reloadData() {
+        zooData = fs.readFileSync(zooDataPath);
+    }
 }
 
 module.exports = zoo;

@@ -74,11 +74,6 @@
             "name": "Lobster",
             "default_scalar": "0.05f",
             "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1592819433546451/7JIU-w5So3a/b-264N_P2ya/Lobster.gltf"
-        },
-        {
-            "name": "Tiger",
-            "default_scalar": "0.0075f",
-            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593164202684993/5A3w06FXUup/bdgUzL7whIO/Mesh_BengalTiger.gltf"
         }
     ]
 }
