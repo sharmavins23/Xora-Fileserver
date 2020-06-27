@@ -1,10 +1,14 @@
 // * Main Project: https://github.com/sharmavins23/Zoo
 
-var zooData = require("../data/zoo/zooData.json");
+let zooData = require("../data/zoo/zooData.json");
 
 function zoo(app) {
     // Get all animals from zoo.
     app.get("/zoo", (req, res) => {
+        // Hot reloading of JSON files
+        delete require.cache[require.resolve("./zooData.json")]; // Deleting loaded module
+        zooData = require("./config.json");
+
         res.send(zooData);
     });
 
