@@ -26,7 +26,6 @@ function zoo(app) {
         fs.writeFileSync(zooDataPath, JSON.stringify(zooData));
 
         res.send({
-            Status: 200,
             Message: "Data successfully appended.",
         });
     });
