@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "node --harmony ."
+        "start": "node --harmony .",
+        "expose": "ssh -R vinsdev.serveousercontent.com:80:localhost:3000 serveo.net"
     },
     "author": "",
     "license": "ISC",
