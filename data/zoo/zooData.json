@@ -27,7 +27,7 @@
         },
         {
             "name": "Bison",
-            "default_scalar": "0.1f",
+            "default_scalar": "0.085f",
             "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593165610195773/9sTrha-TxdS/dC42G7mSg34/BisonPlains.gltf"
         },
         {
@@ -37,7 +37,7 @@
         },
         {
             "name": "Egret",
-            "default_scalar": "0.1f",
+            "default_scalar": "0.2f",
             "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593164469307850/4GacWAa1lit/bRCC5FKrE85/GreatEgret.gltf"
         },
         {
@@ -47,22 +47,22 @@
         },
         {
             "name": "Rabbit",
-            "default_scalar": "0.1f",
+            "default_scalar": "0.01f",
             "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593164385125491/3vvONbRCuEF/eoaNtkV10ML/Cottontails.gltf"
         },
         {
             "name": "Mouse",
-            "default_scalar": "0.1f",
+            "default_scalar": "0.05f",
             "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593163830437882/24Xnzj_Nmln/dmsnR-i3kF1/Woodrats.gltf"
         },
         {
             "name": "Rhino",
-            "default_scalar": "0.1f",
+            "default_scalar": "0.0075f",
             "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593077465331221/11qk1uy0YGH/7D0Mx4qy5ls/Mesh_Rhinoceros.gltf"
         },
         {
             "name": "Gecko",
-            "default_scalar": "0.1f",
+            "default_scalar": "0.001f",
             "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1592475494260954/eqjMAgmr-pM/0FB9sFPMBSp/Mesh_Gecko.gltf"
         },
         {
@@ -77,7 +77,7 @@
         },
         {
             "name": "Tiger",
-            "default_scalar": "0.01f",
+            "default_scalar": "0.0075f",
             "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593164202684993/5A3w06FXUup/bdgUzL7whIO/Mesh_BengalTiger.gltf"
         }
     ]
