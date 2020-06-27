@@ -1,5 +1,4 @@
 // * Dynamically loads routes included in this folder.
-// TODO: Possible rewrite with filehound?
 
 var fs = require("fs");
 
