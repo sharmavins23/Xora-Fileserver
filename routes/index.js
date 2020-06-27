@@ -1,6 +1,6 @@
 // * Dynamically loads routes included in this folder.
 
-var fs = require("fs");
+const fs = require("fs");
 
 function dynamicallyLoadRoutes(app) {
     fs.readdirSync(__dirname).forEach(function (file) {
