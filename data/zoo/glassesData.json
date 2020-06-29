@@ -1,0 +1,24 @@
+{
+    "assets": [
+        {
+            "name": "Gray glasses",
+            "default_scalar": "0.0045f",
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1592560926914800/9i5mmOwt7cu/5ioQlf4aoI5/Glasses_01.gltf"
+        },
+        {
+            "name": "Blue shades",
+            "default_scalar": "0.0045f",
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1589852231216668/dCm3NXrMtSr/4qAU-ALSLLg/Sunglasses_01.gltf"
+        },
+        {
+            "name": "Aviators",
+            "default_scalar": "0.0006f",
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1592558671942970/0Wsi-ygmiIX/an-7uRcBXOg/Sunglasses.gltf"
+        },
+        {
+            "name": "Yellow sunglasses (broken asset)",
+            "default_scalar": "0.25f",
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1592560112932336/7vkAZT8QWF-/3jjMt-6AE7I/model.gltf"
+        }
+    ]
+}
