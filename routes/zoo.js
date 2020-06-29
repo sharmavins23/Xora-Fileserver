@@ -29,11 +29,6 @@ function zoo(app) {
             Message: "Data successfully appended.",
         });
     });
-
-    // Remove an animal from the zoo.
-    app.delete("/zoo", (req, res) => {
-        // TODO: Implementation here.
-    });
 }
 
 // Hot relaod the parsed data in a blocking format.
