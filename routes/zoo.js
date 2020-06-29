@@ -8,7 +8,7 @@ var zooData = reloadData();
 function zoo(app) {
     // Get all animals from zoo.
     app.get("/zoo", (req, res) => {
-        reloadData(); // Hot reload in event case of manual changes
+        reloadData(); // Hot reload in event of manual changes
         res.send(zooData);
     });
 
