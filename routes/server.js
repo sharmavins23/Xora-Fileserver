@@ -12,12 +12,10 @@ function server(app) {
 
     // Tries to get the server to brew coffee.
     app.get("/brew", (req, res) => {
-        res.status(418).send(
-            JSON.stringify({
-                message: "I'm a teapot.",
-                why: "Because.",
-            })
-        );
+        res.status(418).send({
+            message: "I'm a teapot.",
+            why: "Because.",
+        });
     });
 }
 
