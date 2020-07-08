@@ -3,7 +3,7 @@
 const fs = require("fs");
 
 const zooDataPath = "data/zoo/zooData.json";
-var zooData = reloadData();
+let zooData = reloadData();
 
 function zoo(app) {
     // Get all animals from zoo.
@@ -14,6 +14,7 @@ function zoo(app) {
 
     // Add an animal to the zoo.
     app.post("/zoo/add", (req, res) => {
+        // TODO: Schema Validation
         reloadData();
         /* Request format:
             {
@@ -25,10 +26,10 @@ function zoo(app) {
         zooData["assets"].push(req.body);
         fs.writeFileSync(zooDataPath, JSON.stringify(zooData));
 
-        res.send({
-            Message: "Data successfully appended.",
-        });
+        res.send({ Message: "Data successfully appended." });
     });
+
+    // TODO: Flush data
 }
 
 // Hot relaod the parsed data in a blocking format.

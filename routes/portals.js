@@ -8,6 +8,7 @@ let portalsData = reloadData();
 function portals(app) {
     // Send the latest drawing that is not the client's to the client
     app.get("/portals/receive", (req, res) => {
+        // TODO: Schema Validation
         reloadData();
 
         // Loop through all drawing objects
@@ -19,6 +20,7 @@ function portals(app) {
 
     // Save the latest drawing from the client
     app.post("/portals/send", (req, res) => {
+        // TODO: Schema Validation
         reloadData();
         /* Request format:
             {
@@ -44,6 +46,8 @@ function portals(app) {
 
         res.send({ Message: "Data successfully sent." });
     });
+
+    // TODO: Flush data
 }
 
 // Hot reload the parsed data in a blocking format.

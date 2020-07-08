@@ -14,6 +14,7 @@ function glasses(app) {
 
     // Add a pair of glasses.
     app.post("/glasses/add", (req, res) => {
+        // TODO: Schema Validation
         reloadData();
         /* Request format:
             {
@@ -29,6 +30,8 @@ function glasses(app) {
             Message: "Data successfully appended.",
         });
     });
+
+    // TODO: Flush data
 }
 
 function reloadData() {
