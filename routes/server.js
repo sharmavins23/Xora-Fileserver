@@ -7,7 +7,17 @@ const dataDir = "./data/";
 function server(app) {
     // Return a list of all projects.
     app.get("/", (req, res) => {
-        res.status(200).send(JSON.stringify(getDirectories(dataDir)));
+        res.send(JSON.stringify(getDirectories(dataDir)));
+    });
+
+    // Tries to get the server to brew coffee.
+    app.get("/brew", (req, res) => {
+        res.status(418).send(
+            JSON.stringify({
+                message: "I'm a teapot.",
+                why: "Because.",
+            })
+        );
     });
 }
 
