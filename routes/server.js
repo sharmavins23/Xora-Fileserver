@@ -13,8 +13,8 @@ function server(app) {
     // Tries to get the server to brew coffee.
     app.get("/brew", (req, res) => {
         res.status(418).send({
-            message: "I'm a teapot.",
-            why: "Because.",
+            Message: "I'm a teapot.",
+            Why: "Because.",
         });
     });
 }
