@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+// TODO: Add project-related sub-readmes for API documentation
+
 // Enable JSON POST requests
 app.use(express.json());
 
