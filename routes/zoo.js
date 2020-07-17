@@ -34,7 +34,7 @@ function zoo(app) {
 
 // Hot relaod the parsed data in a blocking format.
 function reloadData() {
-    zooData = JSON.parse(fs.readFileSync(zooDataPath));
+    return JSON.parse(fs.readFileSync(zooDataPath));
 }
 
 module.exports = zoo;

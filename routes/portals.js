@@ -9,18 +9,23 @@ function portals(app) {
     // Send the latest drawing that is not the client's to the client
     app.get("/portals/receive", (req, res) => {
         // TODO: Schema Validation
+        console.log("Data sent!");
         reloadData();
 
-        // Loop through all drawing objects
-        portalsData["drawings"].foreach((drawing) => {
-            // Send the first drawing that is not the client's
-            if (drawing.sender != req.body.sender) res.send(drawing);
-        });
+        // Testing - send the first value
+        res.send(portalsData["drawings"][0]);
+
+        // // Loop through all drawing objects
+        // portalsData["drawings"].foreach((drawing) => {
+        //     // Send the first drawing that is not the client's
+        //     if (drawing.sender != req.body.sender) res.send(drawing);
+        // });
     });
 
     // Save the latest drawing from the client
     app.post("/portals/send", (req, res) => {
         // TODO: Schema Validation
+        console.log("Data got!");
         reloadData();
         /* Request format:
             {
@@ -43,6 +48,7 @@ function portals(app) {
         drawing = req.body;
         drawing.timeStamp = Math.floor(new Date()); // Add unix epoch time (ms)
         portalsData["drawings"].unshift(drawing); // Add value to start
+        fs.writeFileSync(portalsDataPath, JSON.stringify(portalsData));
 
         res.send({ Message: "Data successfully sent." });
     });
@@ -52,7 +58,7 @@ function portals(app) {
 
 // Hot reload the parsed data in a blocking format.
 function reloadData() {
-    portalsData = JSON.parse(fs.readFileSync(portalsDataPath));
+    return JSON.parse(fs.readFileSync(portalsDataPath));
 }
 
 module.exports = portals;
