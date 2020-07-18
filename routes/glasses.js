@@ -31,7 +31,15 @@ function glasses(app) {
         });
     });
 
-    // TODO: Flush data
+    // Flush the data.
+    app.delete("/glasses/flush", (req, res) => {
+        fs.writeFileSync(
+            glassesDataPath,
+            JSON.stringify({
+                assets: [],
+            })
+        );
+    });
 }
 
 function reloadData() {
