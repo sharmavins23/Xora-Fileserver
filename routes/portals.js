@@ -1,6 +1,7 @@
 // * Main Project: https://github.com/sharmavins23/Thinking-with-Portals
 
 const fs = require("fs");
+const { check, validationResult } = require("express-validator");
 
 const portalsDataPath = "data/portals/portalsData.json";
 let portalsData = reloadData();
@@ -15,20 +16,28 @@ function portals(app) {
     });
 
     // Send the drawing to the server.
-    app.post("/portals/send", (req, res) => {
-        // TODO: Schema Validation
-        reloadData();
+    app.post(
+        "/portals/send",
+        [check("sender").exists(), check("lines").exists()],
+        (req, res) => {
+            // Schema validation
+            const errors = validationResult(req);
+            if (!errors.isEmpty())
+                return res.status(400).json({ errors: errors.array() });
 
-        // Save drawing, add timestamp
-        drawing = req.body;
-        drawing.timeStamp = Math.floor(new Date()); // Add unix epoch time (ms)
+            reloadData();
 
-        // Add drawing to portal data
-        portalsData["drawings"].unshift(drawing); // Add value to start
-        fs.writeFileSync(portalsDataPath, JSON.stringify(portalsData));
+            // Save drawing, add timestamp
+            drawing = req.body;
+            drawing.timeStamp = Math.floor(new Date()); // Add unix epoch time (ms)
 
-        res.status(201).send({ message: "Data successfully sent." });
-    });
+            // Add drawing to portal data
+            portalsData["drawings"].unshift(drawing); // Add value to start
+            fs.writeFileSync(portalsDataPath, JSON.stringify(portalsData));
+
+            res.status(201).send({ message: "Data successfully sent." });
+        }
+    );
 
     // Flush the data.
     app.delete("/portals/flush", (req, res) => {

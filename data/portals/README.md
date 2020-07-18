@@ -73,6 +73,8 @@ no parameters are required.
 
 `201:` Asset data successfully created.
 
+`400:` Badly formed request.
+
 ## Flush the data.
 
 `DELETE /portals/flush/`
