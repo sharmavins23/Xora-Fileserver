@@ -26,7 +26,7 @@ function glasses(app) {
         glassesData["assets"].push(req.body);
         fs.writeFileSync(glassesDataPath, JSON.stringify(glassesData));
 
-        res.send({
+        res.status(201).send({
             Message: "Data successfully appended.",
         });
     });

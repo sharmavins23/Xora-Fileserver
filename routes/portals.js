@@ -50,7 +50,7 @@ function portals(app) {
         portalsData["drawings"].unshift(drawing); // Add value to start
         fs.writeFileSync(portalsDataPath, JSON.stringify(portalsData));
 
-        res.send({ Message: "Data successfully sent." });
+        res.status(201).send({ Message: "Data successfully sent." });
     });
 
     // Flush the data.

@@ -26,7 +26,7 @@ function zoo(app) {
         zooData["assets"].push(req.body);
         fs.writeFileSync(zooDataPath, JSON.stringify(zooData));
 
-        res.send({ Message: "Data successfully appended." });
+        res.status(201).send({ Message: "Data successfully appended." });
     });
 
     // Flush the data.
