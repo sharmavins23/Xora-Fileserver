@@ -29,7 +29,15 @@ function zoo(app) {
         res.send({ Message: "Data successfully appended." });
     });
 
-    // TODO: Flush data
+    // Flush the data.
+    app.post("/zoo/flush", (req, res) => {
+        fs.writeFileSync(
+            zooDataPath,
+            JSON.stringify({
+                assets: [],
+            })
+        );
+    });
 }
 
 // Hot relaod the parsed data in a blocking format.
