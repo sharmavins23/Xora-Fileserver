@@ -53,7 +53,15 @@ function portals(app) {
         res.send({ Message: "Data successfully sent." });
     });
 
-    // TODO: Flush data
+    // Flush the data.
+    app.delete("/portals/flush", (req, res) => {
+        fs.writeFileSync(
+            portalsDataPath,
+            JSON.stringify({
+                drawings: [],
+            })
+        );
+    });
 }
 
 // Hot reload the parsed data in a blocking format.
