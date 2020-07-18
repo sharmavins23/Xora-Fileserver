@@ -27,7 +27,7 @@ function glasses(app) {
         fs.writeFileSync(glassesDataPath, JSON.stringify(glassesData));
 
         res.status(201).send({
-            Message: "Data successfully appended.",
+            message: "Data successfully appended.",
         });
     });
 
@@ -39,6 +39,10 @@ function glasses(app) {
                 assets: [],
             })
         );
+
+        res.send({
+            message: "Data successfully deleted.",
+        });
     });
 }
 
