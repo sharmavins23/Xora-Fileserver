@@ -6,7 +6,7 @@ const zooDataPath = "data/zoo/zooData.json";
 let zooData = reloadData();
 
 function zoo(app) {
-    // Get all animals from zoo.
+    // Get all animals from the zoo.
     app.get("/zoo", (req, res) => {
         reloadData(); // Hot reload in event of manual changes
         res.send(zooData);
@@ -16,13 +16,8 @@ function zoo(app) {
     app.post("/zoo/add", (req, res) => {
         // TODO: Schema Validation
         reloadData();
-        /* Request format:
-            {
-                "name": "",
-                "default_scalar": "",
-                "asset_url": ""
-            }
-        */
+
+        // Add animal data and write to file
         zooData["assets"].push(req.body);
         fs.writeFileSync(zooDataPath, JSON.stringify(zooData));
 
@@ -31,6 +26,7 @@ function zoo(app) {
 
     // Flush the data.
     app.delete("/zoo/flush", (req, res) => {
+        // Write an empty JSON to the location
         fs.writeFileSync(
             zooDataPath,
             JSON.stringify({
