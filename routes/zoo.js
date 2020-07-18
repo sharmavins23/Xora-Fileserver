@@ -30,7 +30,7 @@ function zoo(app) {
     });
 
     // Flush the data.
-    app.post("/zoo/flush", (req, res) => {
+    app.delete("/zoo/flush", (req, res) => {
         fs.writeFileSync(
             zooDataPath,
             JSON.stringify({
