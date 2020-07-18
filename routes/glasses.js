@@ -16,13 +16,8 @@ function glasses(app) {
     app.post("/glasses/add", (req, res) => {
         // TODO: Schema Validation
         reloadData();
-        /* Request format:
-            {
-                "name": "",
-                "default_scalar": "",
-                "asset_url": ""
-            }
-        */
+
+        // Append and write the new data
         glassesData["assets"].push(req.body);
         fs.writeFileSync(glassesDataPath, JSON.stringify(glassesData));
 
@@ -33,6 +28,7 @@ function glasses(app) {
 
     // Flush the data.
     app.delete("/glasses/flush", (req, res) => {
+        // Write an empty JSON to the location
         fs.writeFileSync(
             glassesDataPath,
             JSON.stringify({
@@ -46,6 +42,7 @@ function glasses(app) {
     });
 }
 
+// Hot relaod the parsed data in a blocking format.
 function reloadData() {
     glassesData = JSON.parse(fs.readFileSync(glassesDataPath));
 }
