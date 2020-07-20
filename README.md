@@ -5,13 +5,22 @@ more projects in the future.
 
 # Overview and Functionality
 
-The application is built on a node server on express.js, and routes for the
+This is a lightweight server designed to provide various AR projects with assets
+through HTTP GET and POST requests. It is a (potentially) infinitely ongoing
+project, as the server can be repurposed for any number of other small projects.
+
+The application is built on a Node server using Express, and routes for the
 individual projects are segmented into individual files. Thus, to change the
 data or routes for a project, one needs to only change the file in the routes
-directory, as well as the data in the specific project. All data and
-implementation can be done separately and agnostic of other changes or projects.
+directory, as well as the data in the specific project folder
+(`data/project name`). All data and implementation can be done separately and
+agnostic of other changes or projects; As such, any file transfer is capable of
+being implemented, and since the routes are indexed on server startup
+automatically and dynamically, this server is designed from the ground up to
+infinitely scale.
 
 Each individual project will have a link to its Github code in the routes file.
+The projects also have API documentations in `data/project name` folders.
 
 # License TL;DR
 
