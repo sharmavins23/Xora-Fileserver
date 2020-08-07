@@ -21,7 +21,8 @@ no parameters are required.
         {
             "name": "Name associated with asset",
             "default_scalar": "(Float) scaling value to resize asset",
-            "asset_url": "(URL) .GLTF file link from poly.google.com"
+            "asset_url": "(URL) .GLTF file link from poly.google.com",
+            "background_url": "(URL) static image file link from poly.google.com"
         },
         ...
     ]

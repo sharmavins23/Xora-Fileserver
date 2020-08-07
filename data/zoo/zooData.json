@@ -3,82 +3,98 @@
         {
             "name": "Beagle",
             "default_scalar": "0.005f",
-            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593163282556311/0BnDT3T1wTE/85QOHCZOvov/Mesh_Beagle.gltf"
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593163282556311/0BnDT3T1wTE/85QOHCZOvov/Mesh_Beagle.gltf",
+            "background_url": "https://lh3.googleusercontent.com/SlntDX7W3Mz0DqkD_MWD5ksXdZkol8OD0ZPXO6mA3lxtJe9qfLbTcrOQ_Q3au3Qn=w576-h432-n"
         },
         {
             "name": "Otter",
             "default_scalar": "0.1f",
-            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593080278446684/dJW3JeUWXQ-/50CetZ7PFPM/RiverOtter.gltf"
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593080278446684/dJW3JeUWXQ-/50CetZ7PFPM/RiverOtter.gltf",
+            "background_url": "https://lh3.googleusercontent.com/FkocADgt02KMeO82cYyV9h-wSVVvyvUjw7MKvLUTtSxVov3YIFQpqqIKUjuBGgTC=w576-h432-n"
         },
         {
             "name": "Wolf",
             "default_scalar": "0.0075f",
-            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593165365211172/9L2D1s2_rPO/ewC0cMLb19z/Mesh_Wolf.gltf"
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593165365211172/9L2D1s2_rPO/ewC0cMLb19z/Mesh_Wolf.gltf",
+            "background_url": "https://lh3.googleusercontent.com/OLBULIw91D2fZge1ic-Qcy-fuI3xEC0sBlpmRN6uuKYpGLaZO5VaT5AHpLMDnxIVgw=w576-h432-n"
         },
         {
             "name": "Goat",
             "default_scalar": "0.0065f",
-            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593165865846333/bNYS7ETDNCt/93hZkSoh7qG/Mesh_Goat.gltf"
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593165865846333/bNYS7ETDNCt/93hZkSoh7qG/Mesh_Goat.gltf",
+            "background_url": "https://lh3.googleusercontent.com/mrp03o5n_lLALeL1BOVKP4fVcUkQPqXYEYBKfNkcH7b8GDWh1MBIxBeRE_e7QKs=w576-h432-n"
         },
         {
             "name": "Lion",
             "default_scalar": "0.15f",
-            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593164292485019/3XAJojWxSWz/651X3e2SPWc/Lion.gltf"
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593164292485019/3XAJojWxSWz/651X3e2SPWc/Lion.gltf",
+            "background_url": "https://lh3.googleusercontent.com/4fijVMzsfFhUGZ0r4YQvsgrKHB02eFW1FrY6uVv_C_b1QuMXHz1J-0AL_19TN8o=w576-h432-n"
         },
         {
             "name": "Bison",
             "default_scalar": "0.085f",
-            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593165610195773/9sTrha-TxdS/dC42G7mSg34/BisonPlains.gltf"
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593165610195773/9sTrha-TxdS/dC42G7mSg34/BisonPlains.gltf",
+            "background_url": "https://lh3.googleusercontent.com/wO4kIs2d43Q4R-Ef2qpuaxayjm_JzWEXCrR6f0FM2yt0XIrGeW6XCaFphCOq_4gJ=w576-h432-n"
         },
         {
             "name": "Ferret",
             "default_scalar": "0.1f",
-            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593164410197509/4I1SBFHWuSo/4KoNOiNyj3s/Ferret.gltf"
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593164410197509/4I1SBFHWuSo/4KoNOiNyj3s/Ferret.gltf",
+            "background_url": "https://lh3.googleusercontent.com/1pYiy69FLx6WZ2HT75sfIhPfuTmuV2w4iHKLKr_WXxY7Kuqxq3dZroHPhtcl6c0=w576-h432-n"
         },
         {
             "name": "Egret",
             "default_scalar": "0.1f",
-            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593164469307850/4GacWAa1lit/bRCC5FKrE85/GreatEgret.gltf"
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593164469307850/4GacWAa1lit/bRCC5FKrE85/GreatEgret.gltf",
+            "background_url": "https://lh3.googleusercontent.com/Osug471MOEFRrWphnb3xp9be_UtrbbYp5r-F0_0ZDyqEAB8qQDk_FhX3uHhRYi0=w576-h432-n"
         },
         {
             "name": "Raccoon",
             "default_scalar": "0.1f",
-            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593163921426520/2iYORwFng3_/4vgwfaOPr7B/Raccoon.gltf"
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593163921426520/2iYORwFng3_/4vgwfaOPr7B/Raccoon.gltf",
+            "background_url": "https://lh3.googleusercontent.com/jVbMNmjAftuWhI-x_bqloJ1bEJx-CzVul-nK4yXjXW_vso_T5IZ9u5iZr2k0PaKD=w576-h432-n"
         },
         {
             "name": "Rabbit",
             "default_scalar": "0.01f",
-            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593164385125491/3vvONbRCuEF/eoaNtkV10ML/Cottontails.gltf"
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593164385125491/3vvONbRCuEF/eoaNtkV10ML/Cottontails.gltf",
+            "background_url": "https://lh3.googleusercontent.com/j0BZT1sN8wwO7z5yVyJEGgXoRg3Rg7tWMKgdu4UcajSYdtTHbOrv6FJ77SqXEW5HtA=w576-h432-n"
         },
         {
             "name": "Mouse",
             "default_scalar": "0.05f",
-            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593163830437882/24Xnzj_Nmln/dmsnR-i3kF1/Woodrats.gltf"
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593163830437882/24Xnzj_Nmln/dmsnR-i3kF1/Woodrats.gltf",
+            "background_url": "https://lh3.googleusercontent.com/FP_RlnFwEeza2MDxzvpWlga9rUWWyYac-HUnShPbrdiWwWXfRQ53n0zct4je5cV4rA=w576-h432-n"
         },
         {
             "name": "Rhino",
             "default_scalar": "0.0075f",
-            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593077465331221/11qk1uy0YGH/7D0Mx4qy5ls/Mesh_Rhinoceros.gltf"
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593077465331221/11qk1uy0YGH/7D0Mx4qy5ls/Mesh_Rhinoceros.gltf",
+            "background_url": "https://lh3.googleusercontent.com/KpmUKk5npmk6-sCmqExc0zoNMG-9_wDNo7W2OleZLxS7bc50I5uqwlc23xHjc18=w576-h432-n"
         },
         {
             "name": "Gecko",
             "default_scalar": "0.001f",
-            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1592475494260954/eqjMAgmr-pM/0FB9sFPMBSp/Mesh_Gecko.gltf"
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1592475494260954/eqjMAgmr-pM/0FB9sFPMBSp/Mesh_Gecko.gltf",
+            "background_url": "https://lh3.googleusercontent.com/5tWvPyVnUq9euDVGDMYMEWEvLqHMZ_DYcspKvY_6DB7AI7aeCl37SCPKso25Z9NQ=w576-h432-n"
         },
         {
             "name": "Hyena",
             "default_scalar": "0.15f",
-            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593163705411562/0yU1LU3Nkpu/asANY0EB1Ca/SpottedHyena.gltf"
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593163705411562/0yU1LU3Nkpu/asANY0EB1Ca/SpottedHyena.gltf",
+            "background_url": "https://lh3.googleusercontent.com/4WEmKvhbtUAFJH5T3Lbm8zeQNbIcM7ZMm9NQnoq2bfSQqKRcr3bmgWl-9mSYAV9mXg=w576-h432-n"
         },
         {
             "name": "Lobster",
             "default_scalar": "0.05f",
-            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1592819433546451/7JIU-w5So3a/b-264N_P2ya/Lobster.gltf"
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1592819433546451/7JIU-w5So3a/b-264N_P2ya/Lobster.gltf",
+            "background_url": "https://lh3.googleusercontent.com/Q3fJZSRN1DV8dLgXlAUSBynVcA1uD8ybm2V_IN2nhSK5rN7dA45XS_KITp-utLY=w576-h432-n"
         },
         {
             "name": "Tiger",
             "default_scalar": "0.0075f",
-            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593164202684993/5A3w06FXUup/bdgUzL7whIO/Mesh_BengalTiger.gltf"
+            "asset_url": "https://poly.googleusercontent.com/downloads/c/fp/1593164202684993/5A3w06FXUup/bdgUzL7whIO/Mesh_BengalTiger.gltf",
+            "background_url": "https://lh3.googleusercontent.com/UZ2sX4TjIDyIsReZ6B5scZWvJ2mWBWRk3gVmNOz-e4QJMmJo1bE2GNzDZ86zmOd70A=w576-h432-n"
         }
     ]
 }
